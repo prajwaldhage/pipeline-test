@@ -5,7 +5,6 @@ pipeline {
                 sh 'python3 app.py' 
                 }
             }
-    }
   // Post Actions
   post {
       success {
