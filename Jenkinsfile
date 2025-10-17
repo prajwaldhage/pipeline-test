@@ -1,10 +1,12 @@
 pipeline {
-    agent any 
-    stage('Build Frontend') {
+    agent any
+    stages{
+        stage('Build Frontend') {
             steps {
                 sh 'python3 app.py' 
                 }
-            }
+        }
+    }
   // Post Actions
   post {
       success {
